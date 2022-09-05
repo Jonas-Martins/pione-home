@@ -4,8 +4,13 @@
       <img width="50px" src="@/assets/logos/Pione2Dark.svg" />
     </div>
     <div>
-      <ul class="d-flex" style="list-style: none">
-        <li style="cursor: pointer; font-size: large;" class="mx-5" v-for="(list, i) in menuList" :key="i">
+      <ul class="d-flex" style="list-style: none; color: black">
+        <li
+          style="cursor: pointer; font-size: large"
+          class="mx-5"
+          v-for="(list, i) in menuList"
+          :key="i"
+        >
           {{ list.name }}
         </li>
       </ul>
@@ -22,9 +27,9 @@ export default {
     return {
       menuList: [
         { name: "Home", link: "" },
+        { name: "About", link: "" },
         { name: "Price", link: "" },
         { name: "Contact", link: "" },
-        { name: "About", link: "" },
         { name: "Jobs", link: "" },
       ],
     };
@@ -33,5 +38,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>>

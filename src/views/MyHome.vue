@@ -1,28 +1,35 @@
 <template>
-  <div class="d-flex justify-center">
-    <div style="position: absolute; height: 99vh; width: 100%;">
-      <img height="100%" src="@/assets/characters/teste.svg" />
+  <div style="height: 100vh;">
+    <div class="apresentationBack">
+        <TopMenu style="height: 13%"></TopMenu>
+        <ApresentationHome style="height: 90%"></ApresentationHome>
     </div>
-    <div style="position: absolute; height: 99vh; width: 100%; z-index: 1;">
-      <img height="100%" src="@/assets/characters/teste2.svg" />
-    </div>
-    <div style="position: absolute; z-index: 999; height: 100vh;">
-      <TopMenu style="height: 13%;"></TopMenu>
-      <ApresentationHome style="height: 87%;"></ApresentationHome>
-    </div>
+    <AboutHome style="height: 100%"></AboutHome>
+    <FooterHome style="height: 100%;"></FooterHome>
   </div>
 </template>
 
 <script>
 import TopMenu from "@/components/TopMenu.vue";
 import ApresentationHome from "@/components/ApresentationHome.vue";
+import AboutHome from "@/components/AboutHome.vue";
+import FooterHome from "@/components/FooterHome.vue";
 export default {
   components: {
     TopMenu,
     ApresentationHome,
+    AboutHome,
+    FooterHome
   },
 };
 </script>
 
 <style>
+.apresentationBack {
+  background-image: url(@/assets/characters/backAnimate3.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat:round;
+  position: relative;
+}
 </style>
